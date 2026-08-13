@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f3;
+  --foreground: #18201a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+  color: #50624a;
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+
+.field input,
+.field select {
+  min-height: 2.65rem;
+  border: 1px solid #cdd6c8;
+  border-radius: 0.45rem;
+  background: #ffffff;
+  color: #18201a;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.status {
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.status-idle {
+  background: #ecefe7;
+  color: #50624a;
+}
+
+.status-loading {
+  background: #e3eef5;
+  color: #2e5970;
+}
+
+.status-ready {
+  background: #e0f0e6;
+  color: #285c45;
+}
+
+.status-error {
+  background: #f5e2de;
+  color: #9b3b2e;
+}
+
+table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dce2d6;
+  padding: 0.85rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: #50624a;
+  font-size: 0.8rem;
+  font-weight: 750;
+}
+
+td {
+  background: #ffffff;
+  font-size: 0.9rem;
+}
